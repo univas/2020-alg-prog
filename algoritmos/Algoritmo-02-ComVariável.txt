@@ -1,0 +1,20 @@
+programa {
+	funcao inicio() { //1a prática com variáveis
+
+		//criar uma nova variável
+		inteiro idade = 3
+		
+		//armazenar um valor dentro da variável
+		//idade = 3
+		
+		//imprimir o valor de uma variável (busca o valor para imprimir)
+		escreva(idade, "\n")
+		
+		//modificar o valor de uma variável - o valor 3 foi perdido
+		idade = 5
+		
+		//imprimir novamente o valor da variável
+		escreva("Novo valor da idade: ", idade)
+	}
+}
+

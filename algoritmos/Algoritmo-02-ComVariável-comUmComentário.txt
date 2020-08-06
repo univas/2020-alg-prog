@@ -1,0 +1,10 @@
+programa {
+	funcao inicio() { //1a prática com variáveis
+
+		inteiro idade = 3
+		escreva(idade, "\n")
+		idade = 5
+		escreva("Novo valor da idade: ", idade)
+	}
+}
+

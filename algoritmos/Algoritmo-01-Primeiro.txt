@@ -1,0 +1,13 @@
+programa { //início do programa
+
+    funcao inicio() {
+		
+		//primeiro comando na vida de uma pessoa
+		escreva("Hello world!!", "\n")
+		
+		escreva("Bem vindo aos algoritmos...\n")
+		
+		escreva("Hoje é ", "quarta-feira.", "\nDia: ", "05 de agosto")
+		
+	}
+}

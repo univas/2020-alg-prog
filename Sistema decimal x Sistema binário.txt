@@ -1,0 +1,38 @@
+Curiosidade sobre sistema decimal x sistema binário de numeração
+
+sistema decimal - base 10
+0
+1
+2
+...
+9
+10
+11
+12
+...
+19
+20
+
+
+sistema binário - base 2
+
+
+0 - 0000
+1 - 0001
+2 - 0010 -> 1 + 1 -> dá zero e vai 1
+3 - 0011
+4 - 0100 -> 11 + 1 -> dá zero e vai 1 (duas vezes)
+5 - 0101
+6 - 0110
+7 - 0111 -> 111 + 1 -> dá zero e vai 1 (três vezes)
+8 - 1000
+9 - 1001
+10- 1010
+11- 1011
+12- 1100
+13- 1101
+14- 1110
+15- 1111 -> 1111 + 1 -> dá zero e vai 1 (quatro vezes)
+16-10000
+
+
