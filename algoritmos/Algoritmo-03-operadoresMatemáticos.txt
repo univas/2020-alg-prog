@@ -1,0 +1,76 @@
+programa {
+	funcao inicio() {
+		
+		inteiro valor1 = 2
+		inteiro valor2 = 3
+		inteiro valor3 = 12
+		inteiro total1
+		inteiro total2
+		
+		//somando valores
+		total1 = 4 + 5
+		total2 = valor1 + valor2
+
+        escreva("Resultado da soma (1): ", total1, "\n")
+        escreva("Resultado da soma (2): ", total2, "\n")
+
+        //reaproveitando as variáveis total1 e total2
+        total1 = valor3 - valor2
+        escreva("Resultado da subtração (3): ", total1, "\n")
+        
+        total2 = valor1 * valor3
+        escreva("Resultado da multiplicação (4): ", total2, "\n")
+        
+        total2 = valor3 / valor2
+        escreva("Resultado da divisão (5): ", total2, "\n")
+        
+        //atenção especial para a divisão
+            // divisão por zero -> erro fatal, gerar um resultado inesperado, gerar um valor específico (estranho)
+            // arredondamento -> uso de números inteiros
+
+		//TODO: testar divisão por zero
+            
+        //testes com a divisão
+        //uma variável é visível apenas a partir da sua declaração
+        inteiro divisorInt
+        inteiro dividendoInt
+        inteiro resultadoInt3
+        
+        divisorInt = 9
+        dividendoInt = 2
+        
+        resultadoInt3 = divisorInt / dividendoInt
+        escreva("Resultado da divisão (6): ", resultadoInt3, "\n")
+        
+        resultadoInt3 = dividendoInt / divisorInt // vai arredondar o resultado da divisao
+        escreva("Resultado da divisão (7): ", resultadoInt3, "\n")
+        
+        
+        real divisorReal
+        real dividendoReal
+        real resultadoReal1
+        real resultadoReal2
+        
+        divisorReal = 9
+        dividendoReal = 2
+        
+        resultadoReal1 = divisorReal / dividendoReal
+        escreva("Resultado da divisão (8): ", resultadoReal1, "\n")
+        
+        //quando mistura inteiro e real em uma operação, o resultado terá casas decimais
+        resultadoReal2 = resultadoReal1 / valor1
+        escreva("Resultado da divisão (9): ", resultadoReal2, "\n")
+        
+        resultadoReal2 = 1.2 * valor1 //pode misturar valor fixo com variável
+        escreva("Resultado da divisão (10): ", resultadoReal2, "\n")
+        
+        
+        //conversão de tipos de dados (normalmente com números)
+        inteiro resultadoInt4
+        resultadoInt4 = resultadoReal2 //perde a parte decimal
+        escreva("Resultado da conversão (11): ", resultadoInt4, "\n")
+        
+        real resultadoReal3 = resultadoInt4
+        escreva("Resultado da conversão (12): ", resultadoReal3, "\n")
+	}
+}
