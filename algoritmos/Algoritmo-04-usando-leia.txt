@@ -1,0 +1,14 @@
+programa {
+	funcao inicio() { //usando o a função leia()
+		
+		inteiro valorInt
+		
+		escreva("Olá, digite um valor inteiro: ")
+		
+		leia(valorInt) //espera o usuário digitar e apertar <ENTER>
+		                //grava o valor na variável
+		
+		escreva("Você digitou o valor: ", valorInt)
+	}
+}
+

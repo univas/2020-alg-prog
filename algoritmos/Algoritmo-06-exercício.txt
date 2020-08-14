@@ -1,0 +1,22 @@
+programa {
+	funcao inicio() { //exercício 02 da lista 01
+		real comprimento
+		real largura
+		real altura
+		real volume
+		
+        escreva("Digite o comprimento: ")
+        leia(comprimento)
+
+        escreva("Digite a largura: ")
+        leia(largura)
+
+        escreva("Digite a altura: ")
+        leia(altura)
+        
+        volume = comprimento * largura * altura
+        
+        escreva("O volume é: ", volume)
+	}
+}
+

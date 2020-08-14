@@ -29,11 +29,21 @@ programa {
             // arredondamento -> uso de números inteiros
 
 		//TODO: testar divisão por zero
+		//*********NÃO FAZER DIVISÃO POR ZERO************//
+		real dividendoReal = 0
+		total2 = valor1 / dividendoReal //o resultado da divisão foi um valor estranho (devido às casas decimais do real)
+		escreva("Resultado da divisão por zero (1): ", total2)
+		
+		inteiro dividendoInt = 0
+		
+
+		//*********NÃO FAZER DIVISÃO POR ZERO************//
+		//total2 = valor1 / dividendoInt //ocorrerá um erro >>> interrompeu o programa
+		//escreva("Resultado da divisão por zero (2): ", total2) 
             
         //testes com a divisão
         //uma variável é visível apenas a partir da sua declaração
         inteiro divisorInt
-        inteiro dividendoInt
         inteiro resultadoInt3
         
         divisorInt = 9
@@ -47,7 +57,6 @@ programa {
         
         
         real divisorReal
-        real dividendoReal
         real resultadoReal1
         real resultadoReal2
         
