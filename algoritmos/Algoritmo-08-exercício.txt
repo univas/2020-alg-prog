@@ -1,0 +1,25 @@
+programa {
+	funcao inicio() { //exercício 05 da lista 01
+		inteiro qtdSegundos, qtdHoras, qtdMinutos
+		qtdHoras = 0
+		
+		escreva("Digite a quantidade de segundos do evento: ")
+		leia(qtdSegundos)
+		
+		//cálculo dos minutos
+		qtdMinutos = qtdSegundos / 60 //extrai a quantidade de minutos
+		qtdSegundos = qtdSegundos - (qtdMinutos * 60) //subtrai a quantidade de minutos do total de segundos
+		
+		//qtdMinutos = 125 / 60 = 2
+		//qtdSegundos = 125 - (2 * 60) = 5
+
+        //cálculo das horas
+        qtdHoras = qtdMinutos / 60 //extrai a quantidade de horas
+        qtdMinutos = qtdMinutos - (qtdHoras * 60) //subtrai a quantidade de horas do total de minutos
+		
+		//impressão do resultado
+		escreva("Quantidade de horas: ", qtdHoras, "\n")
+		escreva("Quantidade de minutos: ", qtdMinutos, "\n")
+		escreva("Quantidade de segundos: ", qtdSegundos, "\n")
+	}
+}
