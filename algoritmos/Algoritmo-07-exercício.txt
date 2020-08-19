@@ -1,0 +1,29 @@
+programa {
+	funcao inicio() { //exercício 03 da lista 01
+		real salarioLiquido, valorDaHora, percentualDescontoINSS, salarioBruto, valorDoDesconto
+		inteiro qtdHorasTrabalhadas
+
+		//leitura dos valores
+		escreva("Digite o valor da hora: ")
+		leia(valorDaHora)
+		escreva("Digite a quantidade de horas trabalhadas: ")
+		leia(qtdHorasTrabalhadas)
+		escreva("Digite o percentual de desconto de INSS: ")
+		leia(percentualDescontoINSS)
+		
+		//cálculos
+		salarioBruto = valorDaHora * qtdHorasTrabalhadas
+		
+		//salarioBruto = 1000
+		//percentualDescontoINSS = 8
+		//desconto = 1000 * 8 / 100
+		
+		valorDoDesconto = salarioBruto * percentualDescontoINSS / 100.0
+		
+		salarioLiquido = salarioBruto - valorDoDesconto
+		
+		//impressão dos resultados
+		escreva("O valor do salário líquido é: ", salarioLiquido, "\n")
+		escreva("O valor do desconto de INSS é: ", valorDoDesconto)
+	}
+}
