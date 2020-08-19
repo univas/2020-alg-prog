@@ -1,5 +1,5 @@
 programa {
-	funcao inicio() { //exercício 05 da lista 01
+	funcao inicio() { //exercício 04 da lista 01
 		inteiro qtdSegundos, qtdHoras, qtdMinutos
 		qtdHoras = 0
 		
