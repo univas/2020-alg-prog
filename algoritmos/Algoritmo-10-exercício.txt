@@ -1,0 +1,35 @@
+programa {
+	funcao inicio() { //exercício 06 da lista 01
+		inteiro capacidade
+		inteiro tempoParaEncher
+		real consumoPorMinuto
+		
+		real totalLitrosPorHora, tempoParaEncherUmaHora
+		real taxaEncherAPartirDeUmaHora, restanteAlemDeUmaHora, tempoParaEncherORestante, tempoTotal
+		
+		escreva("Digite a capacidade máxima da caixa: ")
+		leia(capacidade)
+		
+		
+		//Cenário 1: capacidade maior que totalLitrosPorHora
+		
+		tempoParaEncherUmaHora = 60
+		totalLitrosPorHora = 22 * 60
+		consumoPorMinuto = 350 / 60.0
+		taxaEncherAPartirDeUmaHora = 22 - consumoPorMinuto
+        
+        restanteAlemDeUmaHora = capacidade - totalLitrosPorHora
+        tempoParaEncherORestante = restanteAlemDeUmaHora / taxaEncherAPartirDeUmaHora
+		
+		tempoTotal = tempoParaEncherUmaHora + tempoParaEncherORestante
+		
+		escreva("Tempo para encher em uma hora: ", tempoParaEncherUmaHora, " min\n")
+		escreva("Tempo para encher o restante: ", tempoParaEncherORestante, " min\n")
+		escreva("Consumo por minuto: ", consumoPorMinuto, " litros\n")
+		escreva("Tempo total: ", tempoTotal, " min\n")
+		
+		
+		//Cenário 2: capacidade menor que totalLitrosPorHora
+		//TODO: implementar o código para o cenário 2
+	}
+}
