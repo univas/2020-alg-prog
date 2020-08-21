@@ -1,0 +1,16 @@
+programa {
+	funcao inicio() { //exercício 05 da lista 01
+		real altura //em metros
+		inteiro qtdDegraus
+		real comprimento
+		
+		escreva("Digite a altura da escada em metros: ")
+		leia(altura)
+		
+		qtdDegraus = altura / 0.2 //em metros
+		comprimento = qtdDegraus * 0.3 //em metros
+		
+		escreva("Quantidade de degraus: ", qtdDegraus, "\n")
+        escreva("Comprimento da escada: ", comprimento)
+	}
+}
