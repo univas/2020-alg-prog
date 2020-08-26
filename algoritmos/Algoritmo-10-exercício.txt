@@ -9,7 +9,7 @@ programa {
 		//cenário 1:
 		tempoParaEncher = capacidade / 22
 		
-		escreva("Tempo para encher (cenário 1): ", tempoParaEncher, " segundos\n")
+		escreva("Tempo para encher (cenário 1): ", tempoParaEncher, " minutos\n")
 		
 		//cenário2:
 		inteiro qtdEncheEmUmaHora, qtdAguaRestante
@@ -18,12 +18,12 @@ programa {
 		qtdEncheEmUmaHora = 22 * 60
 		qtdAguaRestante = capacidade - qtdEncheEmUmaHora
 		
-		taxaEnchimentoAposUmaHora = 22 - (350 / 60)
+		taxaEnchimentoAposUmaHora = 22 - (350 / 60.0)
 		
 		tempoRestante = qtdAguaRestante / taxaEnchimentoAposUmaHora
 		
 		tempoTotal = 60 + tempoRestante
 		
-		escreva("Tempo total para encher (cenário 2): ", tempoTotal)
+		escreva("Tempo total para encher (cenário 2): ", tempoTotal, " minutos\n")
 	}
 }
