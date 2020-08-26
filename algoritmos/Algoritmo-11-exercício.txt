@@ -1,0 +1,18 @@
+programa {
+	funcao inicio() { //exercício 07 da lista 01
+		inteiro totalA, totalB, totalC, totalPorDia, totalPorSemana, totalPorHora
+		
+		totalA = 50 * 8 //por dia
+		totalB = 3 * 60 * 8 //por dia
+		totalC = 1000 //por dia
+		
+		totalPorDia = totalA + totalB + totalC
+		
+		totalPorSemana = totalPorDia * 5
+		
+		totalPorHora = totalPorDia / 8
+		
+		escreva("Total produzido por hora: ", totalPorHora, "\n")
+		escreva("Total produzido por semana: ", totalPorSemana)
+	}
+}
