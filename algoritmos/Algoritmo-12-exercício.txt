@@ -1,0 +1,23 @@
+programa { 
+	funcao inicio() { //exercício 08 da lista 01
+		inteiro numero
+		inteiro milhares, centenas, dezenas, unidades
+		
+		escreva("Digite um número com 4 dígitos: ")
+		leia(numero)
+		
+		//fazer o calculo dos milhares, centenas, dezenas, unidades
+		milhares = numero / 1000
+		numero = numero % 1000
+		
+		centenas = numero / 100
+		numero = numero % 100
+		
+		dezenas = numero / 10
+		
+		unidades = numero % 10
+		
+		//imprimir o resultado
+		escreva(milhares, "m ", centenas, "c ", dezenas, "d ", unidades, "u.\n")
+	}
+}
