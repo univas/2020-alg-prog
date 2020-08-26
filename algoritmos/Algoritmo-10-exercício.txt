@@ -1,35 +1,29 @@
 programa {
 	funcao inicio() { //exercício 06 da lista 01
-		inteiro capacidade
-		inteiro tempoParaEncher
-		real consumoPorMinuto
+	    
+	    inteiro capacidade
+	    real tempoParaEncher
+	    
+	    leia(capacidade)
+	    
+		//cenário 1:
+		tempoParaEncher = capacidade / 22
 		
-		real totalLitrosPorHora, tempoParaEncherUmaHora
-		real taxaEncherAPartirDeUmaHora, restanteAlemDeUmaHora, tempoParaEncherORestante, tempoTotal
+		escreva("Tempo para encher (cenário 1): ", tempoParaEncher, " segundos\n")
 		
-		escreva("Digite a capacidade máxima da caixa: ")
-		leia(capacidade)
+		//cenário2:
+		inteiro qtdEncheEmUmaHora, qtdAguaRestante
+		real taxaEnchimentoAposUmaHora, tempoRestante, tempoTotal
 		
+		qtdEncheEmUmaHora = 22 * 60
+		qtdAguaRestante = capacidade - qtdEncheEmUmaHora
 		
-		//Cenário 1: capacidade maior que totalLitrosPorHora
+		taxaEnchimentoAposUmaHora = 22 - (350 / 60)
 		
-		tempoParaEncherUmaHora = 60
-		totalLitrosPorHora = 22 * 60
-		consumoPorMinuto = 350 / 60.0
-		taxaEncherAPartirDeUmaHora = 22 - consumoPorMinuto
-        
-        restanteAlemDeUmaHora = capacidade - totalLitrosPorHora
-        tempoParaEncherORestante = restanteAlemDeUmaHora / taxaEncherAPartirDeUmaHora
+		tempoRestante = qtdAguaRestante / taxaEnchimentoAposUmaHora
 		
-		tempoTotal = tempoParaEncherUmaHora + tempoParaEncherORestante
+		tempoTotal = 60 + tempoRestante
 		
-		escreva("Tempo para encher em uma hora: ", tempoParaEncherUmaHora, " min\n")
-		escreva("Tempo para encher o restante: ", tempoParaEncherORestante, " min\n")
-		escreva("Consumo por minuto: ", consumoPorMinuto, " litros\n")
-		escreva("Tempo total: ", tempoTotal, " min\n")
-		
-		
-		//Cenário 2: capacidade menor que totalLitrosPorHora
-		//TODO: implementar o código para o cenário 2
+		escreva("Tempo total para encher (cenário 2): ", tempoTotal)
 	}
 }
