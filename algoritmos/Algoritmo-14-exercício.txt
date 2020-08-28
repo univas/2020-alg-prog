@@ -1,0 +1,28 @@
+programa {
+	funcao inicio() { //testes com estruturas de decisão
+		inteiro valor
+		
+		escreva("Digite um valor: ")
+		leia(valor)
+		
+		se (valor < 5 ou valor > 8) {
+		    escreva("O valor não é médio\n")
+
+            se (valor < 5) {
+		        escreva("O valor é baixo\n")
+		    } senao {
+		        escreva("O valor é alto\n")
+		    }
+		    
+		} senao {
+		    escreva("O valor é médio.\n")
+		    
+		    se (valor == 5) {
+		        escreva("O valor é médio-baixo.\n")
+		    } senao {
+		        escreva("O valor é médio-alto\n")
+		    }
+		}
+		escreva("Fim da execução\n")
+	}
+}
