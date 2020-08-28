@@ -1,0 +1,49 @@
+programa {
+	funcao inicio() { //testando operadores lógicos e relacionais para uso no 'se'
+		
+		inteiro x = 3
+		inteiro y = 2
+		inteiro z = 5
+		
+		escreva("Resultado (1): ", x < y, "\n") //falso >>> false
+		escreva("Resultado (2): ", x > y, "\n") //verdadeiro >>> true
+		
+		logico resultado
+		resultado = x < y
+		escreva("Resultado (3): ", resultado, "\n") 	//falso >>> false
+
+        logico operador1, operador2		
+	    logico resultE, resultOU, resultNao
+	    
+	    operador1 = falso
+		operador2 = verdadeiro
+		
+		resultE = operador1 e operador2 //falso
+    	resultOU = operador1 ou operador2 //verdadeiro
+    	resultNao = nao operador1 //verdadeiro
+		
+		escreva("Resultado (4): ", resultE, "\n") 	
+		escreva("Resultado (5): ", resultOU, "\n") 	
+		escreva("Resultado (6): ", resultNao, "\n") 	
+		
+		logico resultadoGeral
+		resultadoGeral = (x > y) e x > z ou nao(y < z) //exemplo qualquer
+		
+		/*
+		Testando um comentário
+		contendo várias
+		linhas
+		*/
+		
+		//comenta apenas na linha atual, após o //
+		
+		
+		//comandos da Ação 1...
+        se (resultadoGeral) {
+            //comandos da Ação 2...
+            escreva("Executou dentro do 'se'\n")
+        }
+        //comandos da Ação 3...
+        escreva("Executou comandos da Ação 3")
+	}
+}
