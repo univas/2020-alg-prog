@@ -1,0 +1,35 @@
+programa {
+	funcao inicio() { //exercício 03 da parte 02
+        inteiro quantidade
+        real valorDoKW, totalDaConta
+        
+        escreva("Digite a quantidade de kilowatts: ")
+        leia(quantidade)
+        
+		//descobrir o valor do KW
+		se (quantidade <= 70) { //1a faixa
+		    valorDoKW = 0.14
+		} senao { //não está na 1a faixa
+		    
+		    se (quantidade <= 110) { //2a faixa
+		        valorDoKW = 0.37
+		    } senao { //não está nem na 1a nem na 2a faixas
+		        
+		        se (quantidade <= 150) { //3a faixa
+		            valorDoKW = 0.64
+		        } senao { //não está nem na 1a nem na 2a nem na 3a faixas
+		            
+		            se (quantidade <= 230) { //4a faixa
+		                valorDoKW = 0.87
+		            } senao { //5a faixa
+		                valorDoKW = 1.15
+		            }
+		        }
+		    }
+		}
+		
+		//calcular o valor total da conta
+		totalDaConta = quantidade * valorDoKW
+		escreva("O valor total da conta é: ", totalDaConta)
+	}
+}
