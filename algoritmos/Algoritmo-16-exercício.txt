@@ -1,0 +1,15 @@
+programa {
+	funcao inicio() { //exercício 02 da parte 02
+		inteiro numero, resto
+		escreva("Digite um número: ")
+		leia(numero)
+		
+		resto = numero % 2 //resto da divisão de numero por 2
+		
+		se (resto == 0) {
+		    escreva("O número ", numero, " é par.\n")
+		} senao {
+		    escreva("O número ", numero, " é ímpar.\n")
+		}
+	}
+}
