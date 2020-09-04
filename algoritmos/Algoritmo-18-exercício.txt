@@ -1,0 +1,29 @@
+programa {
+	funcao inicio() { //exercício 04 da parte 02
+		inteiro qtdA, qtdB, qtdC
+		
+		real tempoEsteiraA, tempoEsteiraB
+		
+		//leitura dos dados
+		escreva("Digite a quantidade de peças do tipo A: ")
+		leia(qtdA)
+		escreva("Digite a quantitade de peças do tipo B: ")
+		leia(qtdB)
+		escreva("Digite a quantidade de peças do tipo C: ")
+		leia(qtdC)
+		
+		//cálculos
+		tempoEsteiraA = qtdA / 9.0 + qtdB / 6.0 + qtdC / 5.0
+		tempoEsteiraB = qtdA / 8.0 + qtdB / 7.0 + qtdC / 6.0
+		
+		//impressão dos resultados
+		se (tempoEsteiraA < tempoEsteiraB) {
+		    escreva("A esteira A gasta menos tempo...\n")
+		} senao {
+		    escreva("A esteira B gasta menos tempo...\n")
+		}
+        
+        escreva("O tempo da esteira A é: ", tempoEsteiraA, "\n")
+        escreva("O tempo da esteira B é: ", tempoEsteiraB, "\n")
+	}
+}
