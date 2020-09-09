@@ -1,0 +1,32 @@
+programa {
+	funcao inicio() { //exercício 05 da parte 02 - v1
+		real valor1, valor2, valor3
+		
+		escreva("Digite o valor1: ")
+		leia(valor1)
+		escreva("Digite o valor2: ")
+		leia(valor2)
+		escreva("Digite o valor3: ")
+		leia(valor3)
+		
+		se (valor1 > valor2 e valor1 > valor3) { //verifica se o valor1 é o maior de todos
+		    escreva("O ", valor1, " é o maior\n")
+		} senao { 
+		    se (valor2 > valor1 e valor2 > valor3) { //verifica se o valor2 é o maior de todos
+                escreva("O ", valor2, " é o maior\n")
+		    } senao {
+		         escreva("O ", valor3, " é o maior\n")
+		    }
+		}
+		
+		se (valor1 < valor2 e valor1 < valor3) { //verifica se o valor1 é o menor de todos
+            escreva("O ", valor1, " é o menor\n")
+		} senao {
+		    se (valor2 < valor1 e valor2 < valor3) { //verifica se o valor2 é o menor de todos
+		        escreva("O ", valor2, " é o menor\n")
+		    } senao {
+		        escreva("O ", valor3, " é o menor\n")
+		    }
+		}
+	}
+}
