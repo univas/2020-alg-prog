@@ -1,0 +1,36 @@
+programa {
+	funcao inicio() { //exercício 05 da parte 02 - v2
+		real valor1, valor2, valor3
+		real valorMaior, valorMenor
+		
+		escreva("Digite o valor1: ")
+		leia(valor1)
+		escreva("Digite o valor2: ")
+		leia(valor2)
+		escreva("Digite o valor3: ")
+		leia(valor3)
+		
+		// estratégia: verifica e guarda o maior e o menor
+		valorMaior = valor1
+		
+		se (valor2 > valorMaior) {
+		    valorMaior = valor2
+		}
+		se (valor3 > valorMaior) {
+		    valorMaior = valor3
+		}
+		
+		valorMenor = valor1
+		se (valor2 < valorMenor) {
+		    valorMenor = valor2
+		}
+		
+		se (valor3 < valorMenor) {
+		    valorMenor = valor3
+		}
+		
+		// escrever o valor do maior e do menor
+		escreva("O valor menor é: ", valorMenor, "\n")
+		escreva("O valor maior é: ", valorMaior, "\n")
+	}
+}
