@@ -1,0 +1,38 @@
+//Testes com incremento e decremento
+
+programa { //Teste 1
+	funcao inicio() {
+		real valor = 1.3
+		inteiro outroValor = 3
+		
+		valor++
+		outroValor+=5
+		
+        escreva("Usando ++\n")
+		escreva("valor: ", valor, "\n")
+		escreva("outro valor: ", outroValor, "\n")
+	}
+}
+
+
+
+programa { //Teste 2
+	funcao inicio() {
+		real valor = 1.3
+		inteiro outroValor = 7
+		
+        escreva("Usando --\n")
+		valor--
+		outroValor-=3 
+		
+		escreva("valor: ", valor, "\n")
+		escreva("outro valor: ", outroValor, "\n")
+  }
+
+  //outras opções: +=, -=, *=, \=
+
+}
+
+
+
+
