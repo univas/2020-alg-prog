@@ -1,0 +1,19 @@
+ programa {
+    funcao inicio() { //condrole dinâmico com leitura do valor máximo
+        
+        inteiro contador = 1
+        inteiro maximo
+
+        escreva("Digite o valor máximo: ")
+        leia(maximo)
+        
+        escreva("Uma linha antes do enquanto\n")
+        enquanto (contador <= maximo) { //condição: contador < 5
+            escreva("Olá. Valor do contador: ", contador, "\n")
+            
+            //contador = contador + 1 //incremento
+            contador++ //outra forma de incremento
+        }
+        escreva("Saiu da repetição.\n")
+    }
+ }
