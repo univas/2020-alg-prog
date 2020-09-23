@@ -1,0 +1,13 @@
+ programa {
+    funcao inicio() { //controlando a repetição com um contador
+        
+        inteiro contador = 0
+
+        escreva("Uma linha antes do enquanto\n")
+        enquanto (contador < 5) { //condição: contador < 5
+            escreva("Olá. Valor do contador: ", contador, "\n")
+            contador = contador + 1 //incremento
+        }
+        escreva("Saiu da repetição.\n")
+    }
+ }
