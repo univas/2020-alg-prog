@@ -1,0 +1,34 @@
+programa {
+	funcao inicio() { //primeiro contato com "enquanto"
+		//Ação 1
+		
+		enquanto(condicao) { 
+		    //enquanto a condição for verdadeira, executa o bloco de Ação 2
+		    //caso a condição seja falsa, a execução continua a partir da 1a linha após o bloco
+		    
+		    //cuidado com o loop infinito: é necessário ir modificando os valores das variáveis que afetam a condição
+		
+		    //a condição deve ter como resultado um valor lógico (verdadeiro / falso)
+		    //exemplos de condições:
+		    // x > y
+		    // x == 0
+		    // x > y ou z < w
+		
+		    //independente do momento que a condição se torne verdadeira, o bloco inteiro será executado
+		
+		    //Ação 2
+		    
+		    //parte1
+
+		    //parte2
+		    //Em algum momento podemos ter: condicao = falso
+		    
+		    //parte3
+		    se (condição == verdadeiro) {
+                //não será executado quando a condição for falso
+		    }
+		    //parte 4
+		}
+		//Ação 3
+	}
+}
