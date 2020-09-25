@@ -1,0 +1,27 @@
+programa {
+    funcao inicio() { //exercício 02 da parte 01
+        
+        inteiro contador = 1
+        inteiro quantidadeDeAlunos
+        inteiro matricula, nota
+
+        escreva("Digite a quantiade de alunos: ")
+        leia(quantidadeDeAlunos)
+        
+        enquanto (contador <= quantidadeDeAlunos) { 
+
+            //lógica de processamento de CADA aluno
+		    escreva("Digite a matrícula: ")
+		    leia(matricula)
+		    escreva("Ditite a nota: ")
+		    leia(nota)
+
+    		se (nota >= 60) {
+	    	    escreva("O aluno com matrícula ", matricula, " está aprovado.\n")
+		    } senao {
+		        escreva("O aluno com matrícula ", matricula, " está reprovado.\n")
+		    }
+            contador++
+        }
+    }
+ }
