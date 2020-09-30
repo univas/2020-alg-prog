@@ -19,7 +19,7 @@ programa {
 
             //verifica se o aluno recém-digitado é o melhor
             se(nota > notaMelhor) {
-                notaMelhor = nota
+                notaMelhor = nota //guarda a nota e a matrícula do melhor aluno
                 matriculaMelhor = matricula
             }
             
