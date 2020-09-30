@@ -4,11 +4,12 @@ programa {
         inteiro contador = 1
         inteiro quantidadeDeAlunos
         inteiro matricula, nota
+        inteiro matriculaMelhor = -1, notaMelhor = -1 //valor da pior nota (coringa)
 
         escreva("Digite a quantiade de alunos: ")
         leia(quantidadeDeAlunos)
         
-        enquanto (contador <= quantidadeDeAlunos) { 
+        enquanto (contador <= quantidadeDeAlunos) {
 
             //lógica de processamento de CADA aluno
 		    escreva("Digite a matrícula: ")
@@ -16,6 +17,12 @@ programa {
 		    escreva("Ditite a nota: ")
 		    leia(nota)
 
+            //verifica se o aluno recém-digitado é o melhor
+            se(nota > notaMelhor) {
+                notaMelhor = nota
+                matriculaMelhor = matricula
+            }
+            
     		se (nota >= 60) {
 	    	    escreva("O aluno com matrícula ", matricula, " está aprovado.\n")
 		    } senao {
@@ -23,5 +30,8 @@ programa {
 		    }
             contador++
         }
+        
+        escreva("Matrícula do melhor aluno: ", matriculaMelhor, "\n")
+        escreva("Nota do melhor aluno: ", notaMelhor, "\n")
     }
  }
