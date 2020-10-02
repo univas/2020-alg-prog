@@ -1,0 +1,26 @@
+programa {
+	funcao inicio() { //exercício 04 da lista 2 - TODO: fazer validação
+		
+		//tarefa de casa: fazer o teste de mesa
+		inteiro qtdAlunos
+		inteiro contador = 1
+		inteiro nota
+		inteiro somaDeNotas = 0
+		real media
+		
+		escreva("Digite a quantidade de alunos: ")
+		leia(qtdAlunos) //tarefa de casa: fazer a validação
+		
+		enquanto(contador <= qtdAlunos) {
+		    escreva("Digite a nota do aluno ", contador, ": ")
+		    leia(nota) //tarefa de casa: fazer a validação
+		    
+		    somaDeNotas += nota
+		    
+		    contador++
+		}
+		
+		media = somaDeNotas / contador
+		escreva("A média das notas é: ", media)
+	}
+}
