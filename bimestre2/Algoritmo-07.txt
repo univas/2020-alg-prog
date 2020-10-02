@@ -16,8 +16,8 @@ programa {
             //lógica de processamento de CADA aluno
 		    escreva("Digite a matrícula: ")
 		    leia(matricula)
-		    nota = -1
-		    enquanto(nota < 0 ou nota > 100) { //Cuidado!
+		    nota = -1 //correção do bug
+		    enquanto(nota < 0 ou nota > 100) { //Cuidado com o bug!
     		    escreva("Digite a nota: ")
 	    	    leia(nota)
 		    }
