@@ -1,0 +1,22 @@
+programa {
+	funcao inicio() { //exercício 5 da lista 2 - v1
+        inteiro numero = 0, maior = -1000, menor = 1000, contador = 1 //1000 e -1000 são valores arbitrários !
+        
+        enquanto(contador <= 10 e numero != -1) {
+            escreva("Digite um número (-1 para sair do programa): ")
+            leia(numero)
+            
+            se (numero != -1) {
+                se (numero  > maior) {
+                    maior = numero
+                }
+                se (numero < menor) {
+                    menor = numero
+                }
+            }
+            contador++
+        }
+        escreva("Maior: ", maior, "\n")
+        escreva("Menor: ", menor, "\n")
+	}
+}
