@@ -1,0 +1,12 @@
+programa {
+	funcao inicio() { //repetição usando: para (exemplo 2)
+		inteiro senhaDaFila, quantidade
+		
+		escreva("Digite a quantidade de senhas: ")
+		leia(quantidade)
+		
+		para(senhaDaFila = 1; senhaDaFila <= quantidade; senhaDaFila++) {
+		    escreva("Senha: ", senhaDaFila, "\n")
+		}
+	}
+}
