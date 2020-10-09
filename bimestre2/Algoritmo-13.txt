@@ -1,0 +1,25 @@
+programa {
+	funcao inicio() { //repetição usando: para (exemplo 1)
+		
+		//estrutura de repetição: para (usado quando você sabe quantas vezes ocorrerá a repetição)
+		    //1) valor inicial / inicialização
+		    //2) condição de repetição
+		    //3) incremento
+		    //separa com ponto-e-virgula
+		    
+		inteiro contador, saldo
+		
+		para ( contador = 1 ; contador <= 10 ; contador++) {//para contador de 1 até 10, aumenta o contador de um em um
+		    
+		    escreva("Digite o valor do saldo: ")
+		    leia(saldo)
+		
+    		se (saldo > 0.0) {
+	    	    escreva("O saldo da conta é positivo.\n")
+		    } senao {
+		        escreva("O saldo da conta é negativo.\n")
+		    }
+		}
+		
+	}
+}
