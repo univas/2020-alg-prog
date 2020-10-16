@@ -1,0 +1,47 @@
+programa {
+    funcao inicio() { //exercício 03 da parte 01
+        
+        inteiro contador
+        inteiro quantidadeDeAlunos = -1
+        inteiro matricula, nota = -1
+        inteiro matriculaMelhor = -1, notaMelhor = -1 //valor da pior nota (coringa)
+
+        enquanto(quantidadeDeAlunos < 1) { //recomendável usar o enquanto
+        
+        //para(; quantidadeDeAlunos < 1; ) {
+            escreva("Digite a quantiade de alunos: ")
+            leia(quantidadeDeAlunos)
+        }
+        
+        //enquanto (contador <= quantidadeDeAlunos) { //recomendável usar o para
+        para (contador = 1; contador <= quantidadeDeAlunos; contador++) {
+
+            //lógica de processamento de CADA aluno
+		    escreva("Digite a matrícula: ")
+		    leia(matricula)
+		    nota = -1 //correção do bug
+		    enquanto(nota < 0 ou nota > 100) { //Cuidado com o bug! //recomendável usar o enquanto
+		    
+		    //para (nota = -1; nota < 0 ou nota > 100; ) {
+    		    escreva("Digite a nota: ")
+	    	    leia(nota)
+		    }
+		    
+            //verifica se o aluno recém-digitado é o melhor
+            se(nota > notaMelhor) {
+                notaMelhor = nota //guarda a nota e a matrícula do melhor aluno
+                matriculaMelhor = matricula
+            }
+            
+    		se (nota >= 60) {
+	    	    escreva("O aluno com matrícula ", matricula, " está aprovado.\n")
+		    } senao {
+		        escreva("O aluno com matrícula ", matricula, " está reprovado.\n")
+		    }
+            //contador++ // já está dentro do para
+        }
+        
+        escreva("Matrícula do melhor aluno: ", matriculaMelhor, "\n")
+        escreva("Nota do melhor aluno: ", notaMelhor, "\n")
+    }
+ }
