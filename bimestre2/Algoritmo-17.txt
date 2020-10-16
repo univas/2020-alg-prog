@@ -1,0 +1,23 @@
+programa {
+	funcao inicio() { //exercício 06 da lista 2 (números primos) - v2
+		inteiro numero, contador// = 2
+		escreva("Digite um número: ")
+		leia(numero)
+		
+		inteiro metade = numero / 2
+		
+		//enquanto ((numero % contador != 0) e contador <= metade) {
+		    //contador++
+		//}
+
+		para(contador = 2; (numero % contador != 0) e contador <= metade ; contador++) {
+		}
+
+		
+		se (contador > metade) {
+		    escreva("O número ", numero, " é primo.\n")
+		} senao {
+		    escreva("O número ", numero, " não é primo.\n")
+		}
+	}
+}
