@@ -1,0 +1,30 @@
+programa {
+	funcao inicio() { //exercício 5 da lista 2 - v2
+        inteiro numero, maior, menor, contador// = 1
+        
+        escreva("Digite um número (-1 para sair do programa): ")
+        leia(numero)
+        maior = numero
+        menor = numero
+        //contador++
+        
+        //enquanto(contador <= 10 e numero != -1) {
+            
+        para(contador = 2; contador <= 10 e numero != -1; contador++) {
+            
+            se (numero  > maior) {
+                maior = numero
+            }
+            se (numero < menor) {
+                menor = numero
+            }
+
+            escreva("Digite um número (-1 para sair do programa): ")
+            leia(numero)
+
+            //contador++
+        }
+        escreva("Maior: ", maior, "\n")
+        escreva("Menor: ", menor, "\n")
+	}
+}
