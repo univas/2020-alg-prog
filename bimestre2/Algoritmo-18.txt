@@ -1,0 +1,26 @@
+programa {
+	funcao inicio() {
+		inteiro contador
+		
+		//inicialização: ocorre apenas uma vez antes de iniciar o bloco/repetição
+		//condição: é verificada todas as vezes antes de executar o bloco
+		//incremento: é executado após um bloco ser finalizado e retornado ao "para", antes da verificação da condição
+		para(contador = 1; contador < 2; contador++) {
+		    escreva("Contador: ", contador, "\n")
+		}
+		escreva("Contador final: ", contador, "\n")
+	}
+}
+
+
+programa {
+	funcao inicio() {
+		inteiro contador
+		
+		para(contador = 1; contador <= 10; contador++) {
+		    escreva("Contador: ", contador, "\n")
+		    contador++ //cuidadeo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		}
+		escreva("Contador final: ", contador, "\n")
+	}
+}
