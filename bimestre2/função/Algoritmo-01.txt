@@ -1,0 +1,29 @@
+programa {
+    
+	funcao inicio() { //primeiros contatos com funções.
+		cumprimentar()
+		//cumprimentar()
+		//cumprimentar()
+		
+		inteiro valor1, valor2
+		
+		valor1 = multiplicarPorDois(3)
+		valor2 = multiplicarPorDois(137)
+		
+		escreva("Valor1: ", valor1, "\n")
+		escreva("Valor2: ", valor2, "\n")
+	}
+	
+	funcao inteiro multiplicarPorDois(inteiro x) {
+
+	    inteiro resultado = x * 2
+	    escreva("Resultado da função multiplicarPorDois: ", resultado, "\n")
+	    retorne resultado
+	}
+	
+	funcao cumprimentar() {
+	    escreva("Olá de dentro da primeira função!\n")
+	    escreva("Bem vindo ao mundo das funções...\n")
+	    escreva("Essa função pode ser chamada muitas vezes...\n")
+	}
+}
