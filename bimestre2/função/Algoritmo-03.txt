@@ -1,0 +1,51 @@
+programa {
+	funcao inicio() { //Exercício 02 da lista 03
+		
+		inteiro total = somar(2, 3)
+		real totalReal
+		
+		escreva("Total 1: ", total, "\n")
+		
+		total = somar(3, 4)
+		escreva("Total 2: ", total, "\n")
+		
+		total = subtrair(5, 3)
+		escreva("Total 3: ", total, "\n")
+		
+		escreva("Total 4: ", multiplicar(4,5), "\n")
+		
+		total = dividir(12, 4)
+		escreva("Total 5: ", total, "\n")
+        
+		totalReal = dividir(13, 4)
+		escreva("Total 6: ", totalReal, "\n")
+		
+		totalReal = dividir(0, 3)
+		escreva("Total 7: ", totalReal, "\n")
+        
+        totalReal = dividir(3, 0)
+		escreva("Total 8: ", totalReal, "\n")
+	}
+
+	funcao real dividir(real divisor, real dividendo) {
+	    se (dividendo != 0.0) {
+	        escreva("O dividendo não é zero\n")
+    	    retorne divisor / dividendo
+	    }
+	    escreva("O dividendo não pode ser zero.\n")
+	    retorne 0
+	}
+	
+	funcao inteiro somar(inteiro a, inteiro b) {
+	    retorne a + b
+	}
+	
+	funcao inteiro subtrair(inteiro valor1, inteiro valor2) {
+	    retorne valor1 - valor2
+	}
+	
+	funcao inteiro multiplicar(inteiro valor1, inteiro valor2) {
+	    retorne valor1 * valor2
+	}
+	
+}
