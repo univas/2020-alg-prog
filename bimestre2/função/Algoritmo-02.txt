@@ -1,0 +1,15 @@
+programa {
+	funcao inicio() { //Exercício 01 da lista 03
+		
+		inteiro total = somar(2, 3)
+		escreva("Total 1: ", total, "\n")
+		
+		total = somar(3, 4)
+		escreva("Total 2: ", total, "\n")
+		
+	}
+	
+	funcao inteiro somar(inteiro a, inteiro b) {
+	    retorne a + b
+	}
+}
