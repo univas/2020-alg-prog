@@ -5,13 +5,18 @@ programa {
 		//cumprimentar()
 		//cumprimentar()
 		
-		inteiro valor1, valor2
+		inteiro valor1, valor2, valor3
+		inteiro numero
 		
 		valor1 = multiplicarPorDois(3)
 		valor2 = multiplicarPorDois(137)
+		escreva("Digite um valor: ")
+		leia(numero)
+		valor3 = multiplicarPorDois(numero)
 		
 		escreva("Valor1: ", valor1, "\n")
 		escreva("Valor2: ", valor2, "\n")
+		escreva("Valor3: ", valor3, "\n")
 	}
 	
 	funcao inteiro multiplicarPorDois(inteiro x) {
