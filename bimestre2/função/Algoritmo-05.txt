@@ -1,0 +1,26 @@
+programa {
+	funcao inicio() { //Exercício 04 da lista 03
+		inteiro ano
+	    escreva("Digite o ano: ")
+	    leia(ano)
+	    
+	    logico resultado = ehBisexto(ano)
+	    escreva("O ano ", ano, " é bisexto? ", resultado)
+	}
+	
+	funcao logico ehBisexto(inteiro anoASerValidado) {
+	    
+	    se (anoASerValidado % 400 == 0) {
+	        retorne verdadeiro
+	    }
+	    se (anoASerValidado % 100 == 0) {
+	        retorne falso
+	    }
+	    
+	    inteiro resto = anoASerValidado % 4
+	    se (resto == 0) { //é bisexto
+	        retorne verdadeiro
+	    }
+	    retorne falso
+	}
+}
