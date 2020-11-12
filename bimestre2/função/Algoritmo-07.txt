@@ -1,0 +1,45 @@
+programa {
+	funcao inicio() { //Exercício 06 da lista 03
+		inteiro dia, mes, ano
+		escreva("Digite o dia: ")
+		leia(dia)
+		escreva("Digite o mês: ")
+		leia(mes)
+		escreva("Digite o ano: ")
+		leia(ano)
+		
+		proximoDia(dia, mes, ano)
+	}
+	
+	funcao proximoDia(inteiro dia, inteiro mes, inteiro  ano) {
+	    
+	    //meses com 30: abril, junho, setembro e novembro 
+	    //meses com 31: janeiro, março, maio, julho, agosto, outrubro, dezembro
+	    
+	    se(mes == 4 ou mes == 6 ou mes == 9 ou mes == 11) {
+	        //meses com 30
+	        se (dia == 30) {
+	            dia = 1
+	            mes++
+	        } senao {
+	            dia++
+	        }
+	    } senao {
+	        //meses com 31
+	        se (dia == 31) {
+	            dia = 1
+	             mes++
+	        } senao {
+	             dia++
+	        }
+	    }
+	    
+	    se (mes == 13) {
+	        mes = 1
+	        ano++
+	    }
+	    
+	    escreva("Próximo dia: ", dia, "/", mes, "/", ano)
+	}
+	
+}
