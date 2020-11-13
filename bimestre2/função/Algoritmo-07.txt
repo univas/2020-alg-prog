@@ -13,33 +13,60 @@ programa {
 	
 	funcao proximoDia(inteiro dia, inteiro mes, inteiro  ano) {
 	    
-	    //meses com 30: abril, junho, setembro e novembro 
-	    //meses com 31: janeiro, março, maio, julho, agosto, outrubro, dezembro
-	    
-	    se(mes == 4 ou mes == 6 ou mes == 9 ou mes == 11) {
-	        //meses com 30
-	        se (dia == 30) {
-	            dia = 1
-	            mes++
+	    se(mes == 2) { //situação específica para fevereiro
+	        se(ehBisexto(ano)) { //o ano é bisexto
+                se(dia == 29) {
+                    dia = 1
+                    mes++
+                } senao {
+    	            dia++
+    	        }
 	        } senao {
-	            dia++
+    	        se(dia == 28) {
+    	            dia = 1
+    	            mes++
+    	        } senao {
+    	            dia++
+    	        }
 	        }
 	    } senao {
-	        //meses com 31
-	        se (dia == 31) {
-	            dia = 1
-	             mes++
-	        } senao {
-	             dia++
-	        }
+	        se(mes == 4 ou mes == 6 ou mes == 9 ou mes == 11) { //meses com 30: abril, junho, setembro e novembro 
+    	        se (dia == 30) {
+    	            dia = 1
+    	            mes++
+    	        } senao {
+    	            dia++
+    	        }
+    	    } senao { //meses com 31 dias: janeiro, março, maio, julho, agosto, outrubro, dezembro
+    	        se (dia == 31) {
+    	            dia = 1
+    	            mes++
+    	        } senao {
+    	             dia++
+    	        }
+    	    }
 	    }
 	    
 	    se (mes == 13) {
 	        mes = 1
 	        ano++
 	    }
-	    
 	    escreva("Próximo dia: ", dia, "/", mes, "/", ano)
 	}
 	
+	funcao logico ehBisexto(inteiro anoASerValidado) {
+	    
+	    se (anoASerValidado % 400 == 0) {
+	        retorne verdadeiro
+	    }
+	    se (anoASerValidado % 100 == 0) {
+	        retorne falso
+	    }
+	    
+	    inteiro resto = anoASerValidado % 4
+	    se (resto == 0) { //é bisexto
+	        retorne verdadeiro
+	    }
+	    retorne falso
+	}
 }
