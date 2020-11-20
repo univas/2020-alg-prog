@@ -1,0 +1,21 @@
+programa {
+	funcao inicio() { //Exercício 07 da lista 03
+		inteiro valor1, valor2
+		inteiro resultadoDaPotencia
+		escreva("Digite o valor 1: ")
+		leia(valor1)
+		escreva("Digite o valor 2: ")
+		leia(valor2)
+		
+		resultadoDaPotencia = calculoDePotencia(valor1, valor2)
+		escreva(valor1, " elevado a ", valor2, " é igual a: ", resultadoDaPotencia)
+	}
+	
+	funcao inteiro calculoDePotencia(inteiro x, inteiro y) {
+	    inteiro resultado = 1
+	    para(inteiro i = 1; i <= y; i++) {
+	        resultado = resultado * x
+	    }
+	    retorne resultado
+	}
+}
