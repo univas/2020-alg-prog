@@ -1,0 +1,27 @@
+programa {
+	funcao inicio() { //Exercício 08 da lista 03
+		inteiro numero
+		escreva("Digite um número: ")
+		leia(numero)
+		imprimeTodosOsPrimosAte(numero)
+	}
+	
+	funcao imprimeTodosOsPrimosAte(inteiro numero) {
+	    para(inteiro i = 1; i <= numero; i++) {
+	        logico resultado = ehPrimo(i)
+	        se (resultado == verdadeiro) {
+	            escreva("O número ", i, " é primo.\n")
+	        }
+	    }
+	}
+	
+	funcao logico ehPrimo(inteiro numero) {
+	    inteiro contador = 2
+	    inteiro metade = numero / 2
+		
+		enquanto ((numero % contador != 0) e contador <= metade) {
+		    contador++
+		}
+		retorne contador > metade
+	}
+}
