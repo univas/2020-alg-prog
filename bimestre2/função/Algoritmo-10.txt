@@ -1,0 +1,28 @@
+programa {
+	funcao inicio() {//Exercício 09 da lista 03
+		inteiro valor
+		escreva("Digite um número: ")
+		leia(valor)
+		
+		escreva("Números que são quadrado perfeito: ")
+		para(inteiro i = 1; i <= valor; i++) {
+		    se (ehQuadradoPerfeito(i)) {
+		        escreva(i, " ")
+		    }
+		}
+	}
+	
+	funcao logico ehQuadradoPerfeito(inteiro numero) {
+	    inteiro soma = 0
+	    inteiro valor = 1
+	    enquanto(soma < numero) {
+	        soma += valor
+	        valor += 2 //caminha apenas nos números ímpares
+	    }
+	    se (soma == numero) {
+	        retorne verdadeiro
+	    }  senao {
+	        retorne falso
+	    }
+	}
+}
