@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main() { //Condrole dinâmico com leitura do valor máximo
+    int contador = 1;
+    int maximo;
+
+    printf("Digite o valor máximo: ");
+    scanf("%i", &maximo);
+    
+    printf("Uma linha antes do enquanto\n");
+    while (contador <= maximo) { //condição: contador < 5
+        printf("Olá. Valor do contador: %i\n", contador);
+        
+        //contador = contador + 1 //incremento
+        contador++; //outra forma de incremento
+    }
+    printf("Saiu da repetição.\n");
+    return 0;
+}
