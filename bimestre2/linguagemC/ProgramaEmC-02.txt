@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() { //Exercício 5 da lista 2 - v2
+
+    int valor;
+    int maior, menor;
+    int contador = 2;
+    
+    printf("Digite um valor: ");
+    scanf("%i", &valor);
+    maior = valor;
+    menor = valor;
+    
+    while(contador <= 10 && valor != -1) {
+        
+        printf("Digite um valor: ");
+        scanf("%i", &valor);
+
+        if(valor != -1) {
+            if(valor > maior) {
+                maior = valor;
+            }
+            if(valor < menor) {
+                menor = valor;
+            }
+        }
+        contador ++;
+    }
+
+    printf("O maior é %i e o menor é %i\n", maior, menor);
+    return 0;
+}
