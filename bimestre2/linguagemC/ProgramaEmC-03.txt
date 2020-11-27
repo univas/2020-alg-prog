@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() { //Exercício 07 da lista 03
+	int valor1, valor2;
+	int resultadoDaPotencia;
+	printf("Digite o valor 1: ");
+	scanf("%i", &valor1);
+	printf("Digite o valor 2: ");
+	scanf("%i", &valor2);
+	
+	resultadoDaPotencia = calculoDePotencia(valor1, valor2);
+	printf("%i elevado a %i é igual a: %i", valor1, valor2, resultadoDaPotencia);
+
+    return 0;
+}
+
+int calculoDePotencia(int x, int y) {
+    int resultado = 1;
+    for(int i = 1; i <= y; i++) {
+        resultado = resultado * x;
+    }
+    return resultado;
+}
