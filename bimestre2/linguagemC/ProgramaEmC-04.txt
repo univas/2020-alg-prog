@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() { //Exercício 09 da lista 03
+    
+    int valor;
+	printf("Digite um número: ");
+	scanf("%i", &valor);
+	
+	printf("Números que são quadrado perfeito: ");
+	for(int n = 1; n <= valor; n++) {
+	    if (ehQuadradoPerfeito(n)) {
+	        printf("%i ", n); //escreva(i, " ")
+	    }
+	}
+    return 0;
+}
+
+int ehQuadradoPerfeito(int numero) {
+    int soma = 0;
+    int valor = 1;
+    while(soma < numero) {
+        soma += valor;
+        valor += 2; //caminha apenas nos números ímpares
+    }
+    if (soma == numero) {
+        return 1;
+    }  else {
+        return 0;
+    }
+}
